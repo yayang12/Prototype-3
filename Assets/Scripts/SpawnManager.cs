@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class SpawnManager : MonoBehaviour
 {
-    public GameObject obstaclePrefab;
-    private Vector3 spawnPos = new Vector3(25, 0, 0);
+    public GameObject obstacle1Prefab;
+    private Vector3 spawnPos = new Vector3(58, 0, 0);
     private float startDelay = 2;
     private float repeatRate = 2;
     // Start is called before the first frame update
@@ -22,6 +22,6 @@ public class SpawnManager : MonoBehaviour
 
     void SpawnObstacle()
     {
-        Instantiate(obstaclePrefab, spawnPos, obstaclePrefab.transform.rotation);
+        Instantiate(obstacle1Prefab, spawnPos, obstacle1Prefab.transform.rotation);
     }
 }
